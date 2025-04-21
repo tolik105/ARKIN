@@ -3,8 +3,11 @@
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
-export function ModeToggle() {
+type ModeToggleProps = { className?: string };
+
+export function ModeToggle({ className = "" }: ModeToggleProps) {
   const { theme, setTheme } = useTheme();
   const [systemTheme, setSystemTheme] = useState<"light" | "dark">("light");
 
@@ -40,7 +43,10 @@ export function ModeToggle() {
   return (
     <button
       onClick={SWITCH}
-      className="relative flex cursor-pointer items-center justify-center rounded-xl p-2 text-neutral-500 hover:shadow-input dark:text-neutral-500"
+      className={cn(
+        "relative flex cursor-pointer items-center justify-center rounded-xl p-2 text-neutral-500 hover:shadow-input dark:text-neutral-500",
+        className
+      )}
     >
       <SunIcon
         size={16}
