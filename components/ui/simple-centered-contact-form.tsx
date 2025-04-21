@@ -46,7 +46,7 @@ export function SimpleCenteredContactForm() {
             Contact Us
           </h1>
           <p className="mt-4 text-neutral-600 dark:text-neutral-400 text-sm max-w-sm">
-            Please reach out and we'll get back to you at warp speed.
+            Please reach out and we&rsquo;ll get back to you at warp speed.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4 py-8">
