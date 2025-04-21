@@ -36,7 +36,7 @@ export function Navbar() {
     },
     {
       name: "Contact",
-      link: "/#contact",
+      link: "/contact",
     },
   ];
 
