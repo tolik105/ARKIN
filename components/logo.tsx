@@ -37,7 +37,7 @@ export const Logo = () => {
           textTransform: 'uppercase'
         }}
       >
-        Akrin
+        AKRIN
       </span>
     </Link>
   );
